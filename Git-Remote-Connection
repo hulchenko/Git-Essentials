@@ -1,0 +1,15 @@
+Obtain SSH key:
+ls -al ~/.ssh (to see if any keys are present)
+ssh-keygen -t ed25519 -C *youremail* (ENTER/ENTER for the default file location and no password)
+eval "$(ssh-agent -s)" (starting SSH agent in the background)
+ssh-add ~/.ssh/id_*privatekeyfile* (attaching SSH key to SSH agent)
+cat ~/.ssh/*public_key* -> copy -> paste/connect in GitHub
+
+Remote connection:
+git remote -v (to see all existing remote repositories)
+git remote add *repository_name* *repository address* (ex. git remote add origin https://github.com/FirstnameLastname/Some-name.git) <- makes this remote repository your main "origin" repository
+git remote remove *repository_name*
+git push *remote_repository_name* *branch* (ex. git push origin master)
+
+Clone(copying remote repository to the local computer, to the current folder user in):
+git clone git@github.com:hulchenko/Git-Essentials.git
