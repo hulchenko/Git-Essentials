@@ -22,8 +22,20 @@ git checkout (move between commits without deleting newer commits)
 a) git checkout *commit#2_id*
 b) git checkout HEAD~2
 c) git checkout HEAD^^
-c) git checkout master <- move to the main branch
+d) git checkout *branch_name* (switch between branches)
+e) git checkout master <- move to the main branch
 To checkout files in previous commits:
 git checkout a0e33627548578d5b94c3b8f4f885303a2cd4eec -- file1 (to see version of the file in provided commit hash)
 git checkout --file1 (to see version of the file in last commit/HEAD. only works for "untracked" and "modified" statuses)
 git checkout -- .(bring all files to last commit/HEAD)
+
+Branch:
+git branch (to see current branch location, where HEAD is pointed)
+git branch *branch_name* (creates a separate branch from the current commit)
+git branch -d *branch_name* (deletes branch)
+
+Merge:
+git merge *branch_name* (merges current branch with the master/main branch)
+
+Pull:
+git pull *remote_repository* *branch_name* (downloads files from remote repository/updates local repository with remote)(ex. git pull origin master)
