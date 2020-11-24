@@ -39,3 +39,6 @@ git merge *branch_name* (merges current branch with the master/main branch)
 
 Pull:
 git pull *remote_repository* *branch_name* (downloads files from remote repository/updates local repository with remote)(ex. git pull origin master)
+
+Clean:
+git clean (deletes untracked files, -n to show deletable list, -f to delete)
