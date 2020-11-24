@@ -6,3 +6,8 @@ or subl/nano filename (after file change in "modified" status)
 git add filename (changing filename status to "staged")
 git commit -m "messagehere" (changing filename status to "committed",thus creating a fixed shot/commit, with the action description message in indefinite tense)
 git commit --amend -m "messagehere" (updating most recent commit)
+
+Other commands:
+git add . (adds all files within folder)
+git add *.txt (adds all files withing folder with specific file type)
+git add dirname/ (add all files in pointed directory)
