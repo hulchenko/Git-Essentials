@@ -1,0 +1,24 @@
+Project start sequence:
+mkdir
+git init (initializing git within the folder)
+touch filename (after creation remains in "untracked" status)
+or subl/nano filename (after file change in "modified" status)
+git add filename (changing filename status to "staged")
+git commit -m "messagehere" (changing filename status to "committed",thus creating a fixed shot/commit, with the action description message in indefinite tense)
+
+General:
+git help (manual)
+git status (check current status of the repository)
+git log (shows current HEAD location, commits and history of the files withing git repository)
+git diff (to see the difference in file between current state and last commit)
+a)git diff *default* <-  
+b)git diff --staged <- 
+git reset (rollback to the pointed commit: ex. git reset HEAD^^ or git reset HEAD~2 <- will roll 2 commits back):
+a) git reset --soft 
+b) git reset --mixed
+c) git reset --hard
+
+Other commands:
+git add . (adds all files within folder)
+git add *.txt (adds all files withing folder with specific file type)
+git add dirname/ (add all files in pointed directory)
