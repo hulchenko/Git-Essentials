@@ -11,12 +11,15 @@ git help (manual)
 git status (check current status of the repository)
 git log (shows current HEAD location, commits and history of the files withing git repository)
 git diff (to see the difference in file between current state and last commit)
-a)git diff *default* <-  
-b)git diff --staged <- 
-git reset (rollback to the pointed commit: ex. git reset HEAD^^ or git reset HEAD~2 <- will roll 2 commits back):
-a) git reset --soft 
-b) git reset --mixed
-c) git reset --hard
+a)git diff <- shows difference between current "untracked" status and last commit  
+b)git diff --staged <- shows difference between current "staged" status and last commit
+c)git diff *commit_id* <- shows difference between current repository and the one indicated
+git reset (rollback to the pointed commit: ex. git reset *commit_ID*/HEAD^^ or git reset *commit_ID*/HEAD~2 <- will roll 2 commits back):
+a) git reset --soft (mild option, brings the project to the pointed commit and moves the post-sequent commits to "staged" status)
+b) git reset --mixed (*no parameter* git reset HEAD^^ = git reset --mixed
+HEAD^^, brings the project to the pointed commit and moves the post-sequent commits to "untracked" status)
+c) git reset --hard (the strongest option, deletes all of the post-sequent commits)
+d) *no parameter/no commit* git reset = git reset --mixed HEAD
 
 Other commands:
 git add . (adds all files within folder)
