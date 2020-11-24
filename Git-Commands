@@ -18,7 +18,15 @@ c) git reset --hard (the strongest option, deletes all of the post-sequent commi
 d) *no parameter/no commit* git reset = git reset --mixed HEAD
 
 Checkout:
-
+git checkout (move between commits without deleting newer commits)
+a) git checkout *commit#2_id*
+b) git checkout HEAD~2
+c) git checkout HEAD^^
+c) git checkout master <- move to the main branch
+To checkout files in previous commits:
+git checkout a0e33627548578d5b94c3b8f4f885303a2cd4eec -- file1 (to see version of the file in provided commit hash)
+git checkout --file1 (to see version of the file in last commit/HEAD. only works for "untracked" and "modified" statuses)
+git checkout -- .(bring all files to last commit/HEAD)
 
 Other commands:
 git add . (adds all files within folder)
