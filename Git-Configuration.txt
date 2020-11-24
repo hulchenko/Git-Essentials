@@ -1,0 +1,3 @@
+git config --global user.name "insert full name here"
+git config --global user.email "insert email"
+git config --global color.ui true (to colorize output)
