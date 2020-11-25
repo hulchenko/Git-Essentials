@@ -13,3 +13,6 @@ git push *remote_repository_name* *branch* (ex. git push origin master)
 
 Clone(copying remote repository to the local computer, to the current folder user in):
 git clone git@github.com:hulchenko/Git-Essentials.git
+
+Upload from local machine to remote server:
+git push origin main (new "main" or old version "master" for main branch)
