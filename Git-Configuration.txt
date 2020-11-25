@@ -1,3 +1,8 @@
-git config --global user.name "insert full name here"
-git config --global user.email "insert email"
+git config --global user.name "Your Name"
+git config --global user.email "yourname@example.com"
+git config --global init.defaultBranch main (GitHub recently changed the default branch on new repositories from master to main, change the default branch for Git using this command)
 git config --global color.ui true (to colorize output)
+
+To verify info:
+git config --get user.name
+git config --get user.email
